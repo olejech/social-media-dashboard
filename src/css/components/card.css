@@ -11,49 +11,58 @@
     padding: 26px 24px;
   }
 
-  .header {
+  &__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 24px;
 
-    &__title {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 21px;
-    }
-
-    &__options {
-      display: flex;
-      width: 100%;
-      max-width: 31px;
+    &_between {
       justify-content: space-between;
-      padding: 10px 5px;
-
-      div,
-      &::before,
-      &::after {
-        width: 5px;
-        height: 5px;
-        background-color: var(--grey-300);
-        border-radius: 50%;
-      }
-
-      &::before,
-      &::after {
-        content: '';
-        transition: transform 0.3s;
-      }
-
-      &:hover::before {
-        transform: translateX(-3px);
-      }
-
-      &:hover::after {
-        transform: translateX(3px);
-      }
     }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  &__options {
+    display: flex;
+    width: 100%;
+    max-width: 31px;
+    justify-content: space-between;
+    padding: 10px 5px;
+
+    &::before,
+    &::after {
+      width: 5px;
+      height: 5px;
+      background-color: var(--grey-300);
+      border-radius: 50%;
+      content: '';
+      transition: transform 0.3s;
+    }
+
+    &:hover::before {
+      transform: translateX(-3px);
+    }
+
+    &:hover::after {
+      transform: translateX(3px);
+    }
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--grey-300);
+    border-radius: 50%;
+  }
+
+  &__badge {
+    margin-left: 20px;
   }
 }
 

@@ -10,9 +10,11 @@
     <div class="container">
       <!-- Messages -->
       <section class="card card_size_sm card_padding_md">
-        <div class="header">
-          <h3 class="header__title">Messages</h3>
-          <button class="button header__options"><div></div></button>
+        <div class="card__header card__header_between">
+          <h3 class="card__title">Messages</h3>
+          <button class="button card__options" aria-label="Open options">
+            <div class="card__dot"></div>
+          </button>
         </div>
         <div class="messages-row">
           <img src="./images/avatar1.png" alt="" class="messages-row__avatar" />
@@ -55,13 +57,10 @@
 
       <!-- Photos -->
       <section class="card card_size_sm card_padding_md">
-        <div class="header">
-          <h3 class="header__title">Photos</h3>
-          <button
-            class="button button header__options"
-            aria-label="button Open options"
-          >
-            <div></div>
+        <div class="card__header card__header_between">
+          <h3 class="card__title">Photos</h3>
+          <button class="button button card__options" aria-label="Open options">
+            <div class="card__dot"></div>
           </button>
         </div>
         <div class="grid-images">
@@ -95,6 +94,14 @@
             class="button grid-images__button"
             aria-label="Add photo"
           ></button>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section class="card card_size_sm card_padding_md">
+        <div class="card__header">
+          <h3 class="card__title">Contacts</h3>
+          <div class="badge card__badge">24</div>
         </div>
       </section>
     </div>
