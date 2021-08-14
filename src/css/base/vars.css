@@ -1,0 +1,31 @@
+:root {
+  /* Page */
+  --container-width: 1600px;
+  --container-padding: 20px;
+
+  /* Fonts */
+  --font-family: 'Noto Sans JP', -apple-system, blinkmacsystemfont, segoe ui,
+    helvetica, arial, sans-serif, apple color emoji, segoe ui emoji;
+  --font-size: 16px;
+  --line-height: 1.6;
+
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --accent: #0062ff;
+  --text: #5d668a;
+  --dark: #151922;
+  --blue-200: #e5eff4;
+  --blue-100: #e7effb;
+  --grey-300: #c2c7cb;
+
+  /* Transition */
+  --duration: 0.25s ease-out;
+}
+
+/* Default phone */
+@custom-media --mq-sm (min-width: 576px); /* Landscape phone */
+@custom-media --mq-md (min-width: 768px); /* Tablet */
+@custom-media --mq-lg (min-width: 992px); /* Desktop */
+@custom-media --mq-xl (min-width: 1200px); /* XLarge desktop */
+@custom-media --mq-xxl (min-width: 1400px); /* XXLarge desktop */

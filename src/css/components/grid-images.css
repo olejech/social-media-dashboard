@@ -1,0 +1,33 @@
+.grid-images {
+  --width: 76px;
+  --height: 70px;
+  --border-radius: 15px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  &__image {
+    border-radius: var(--border-radius);
+
+    &_size_sm {
+      width: var(--widht);
+      height: var(--height);
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    width: var(--width);
+    height: var(--height);
+    background: url('../images/icons/plus.svg') no-repeat center;
+    background-color: var(--blue-100);
+    border-radius: var(--border-radius);
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  background-color: var(--blue-100);
+}
+
+.container {
+  padding: var(--container-padding);
+  margin: 0 auto;
+
+  @media (--mq-xl) {
+    max-width: calc(var(--container-width) - var(--container-padding) * 2);
+  }
+}
