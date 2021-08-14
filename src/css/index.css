@@ -7,5 +7,8 @@
 /* Components */
 @import './components/button.css';
 @import './components/card.css';
-@import './components/grid-images.css';
 @import './components/badge.css';
+
+/* Blocks */
+@import './blocks/photos.css';
+@import './blocks/messages.css';

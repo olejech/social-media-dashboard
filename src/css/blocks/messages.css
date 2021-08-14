@@ -1,0 +1,57 @@
+.messages {
+  display: flex;
+
+  &__avatar {
+    width: 57px;
+    height: 57px;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 19px;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__message {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 16px;
+  }
+
+  &__time {
+    margin-bottom: 14px;
+    color: var(--text);
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  &__new-messages {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--accent);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  & + & {
+    margin-top: 15px;
+  }
+}
