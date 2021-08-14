@@ -9,6 +9,7 @@
 @import './components/card.css';
 @import './components/badge.css';
 @import './components/avatar.css';
+@import './components/image.css';
 
 /* Blocks */
 @import './blocks/photos.css';
