@@ -1,0 +1,11 @@
+.image {
+  &_rounded {
+    border-radius: 15px;
+  }
+
+  &_size_sm {
+    width: 76px;
+    height: 70px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  align-items: center;
+  background: url('../images/icons/message.svg') no-repeat center right;
+
+  &__avatar {
+    margin-right: 15px;
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__name {
+    margin-bottom: 6px;
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__city {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  & + & {
+    margin-top: 30px;
+  }
+}

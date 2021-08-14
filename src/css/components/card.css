@@ -7,6 +7,10 @@
     max-width: 331px;
   }
 
+  &_size_xs {
+    max-width: 290px;
+  }
+
   &_padding_md {
     padding: 26px 24px;
   }

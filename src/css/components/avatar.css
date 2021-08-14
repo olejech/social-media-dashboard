@@ -1,0 +1,9 @@
+.avatar {
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+
+  &_circle {
+    border-radius: 50%;
+  }
+}

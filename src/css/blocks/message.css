@@ -1,11 +1,8 @@
-.messages {
+.message {
   display: flex;
 
   &__avatar {
-    width: 57px;
-    height: 57px;
     margin-right: 15px;
-    object-fit: cover;
   }
 
   &__titles {

@@ -8,7 +8,9 @@
 @import './components/button.css';
 @import './components/card.css';
 @import './components/badge.css';
+@import './components/avatar.css';
 
 /* Blocks */
 @import './blocks/photos.css';
-@import './blocks/messages.css';
+@import './blocks/message.css';
+@import './blocks/contact.css';
