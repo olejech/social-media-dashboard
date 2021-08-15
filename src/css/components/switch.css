@@ -1,0 +1,42 @@
+.switch {
+  position: relative;
+
+  &__round {
+    display: flex;
+    width: 38px;
+    height: 23px;
+    align-items: center;
+    background-color: var(--blue-200);
+    border-radius: 100px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      left: 4px;
+      width: 17px;
+      height: 17px;
+      background-color: var(--white);
+      border-radius: 50%;
+      content: '';
+      transition: transform 0.3s;
+    }
+  }
+
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + .switch__round {
+      background-color: var(--accent);
+
+      &::before {
+        transform: translateX(calc(100% - 4px));
+      }
+    }
+
+    &:focus + .switch__round::before {
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+  }
+}

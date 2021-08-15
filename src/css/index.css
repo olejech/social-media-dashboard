@@ -11,6 +11,7 @@
 @import './components/avatar.css';
 @import './components/image.css';
 @import './components/nav.css';
+@import './components/switch.css';
 
 /* Blocks */
 @import './blocks/photos.css';
@@ -19,3 +20,4 @@
 @import './blocks/stories.css';
 @import './blocks/logo.css';
 @import './blocks/requests.css';
+@import './blocks/switch-mode.css';
