@@ -4,6 +4,7 @@
 
   position: relative;
   display: flex;
+  width: 242px;
 
   &__story {
     position: absolute;

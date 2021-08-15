@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container page">
       <!-- Messages -->
-      <section class="card card_size_sm card_padding_md">
+      <section class="section-messages card card_size_sm card_padding_md">
         <div class="card__header card__header_between">
           <h3 class="card__title">Messages</h3>
           <button
@@ -68,7 +68,7 @@
       </section>
 
       <!-- Photos -->
-      <section class="card card_size_sm card_padding_md">
+      <section class="section-photos card card_size_sm card_padding_md">
         <div class="card__header card__header_between">
           <h3 class="card__title">Photos</h3>
           <button
@@ -80,42 +80,45 @@
           </button>
         </div>
         <div class="photos">
-          <img
-            src="./images/photo1.png"
-            alt=""
-            class="image image_rounded image_size_sm"
-          />
-          <img
-            src="./images/photo2.png"
-            alt=""
-            class="image image_rounded image_size_sm"
-          />
-          <img
-            src="./images/photo3.png"
-            alt=""
-            class="image image_rounded image_size_sm"
-          />
-          <img
-            src="./images/photo4.png"
-            alt=""
-            class="image image_rounded image_size_sm"
-          />
-          <img
-            src="./images/photo5.png"
-            alt=""
-            class="image image_rounded image_size_sm"
-          />
+          <div class="photos__text">5 Pictures upladed</div>
+          <div class="photos__grid">
+            <img
+              src="./images/photo1.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo2.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo3.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo4.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo5.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
 
-          <button
-            type="button"
-            class="button photos__button"
-            aria-label="Add photo"
-          ></button>
+            <button
+              type="button"
+              class="button photos__button"
+              aria-label="Add photo"
+            ></button>
+          </div>
         </div>
       </section>
 
       <!-- Contacts -->
-      <section class="card card_size_xs card_padding_md">
+      <section class="section-contacts card card_size_xs card_padding_md">
         <div class="card__header">
           <h3 class="card__title">Contacts</h3>
           <div class="badge badge_button card__badge">24</div>
@@ -156,7 +159,7 @@
       </section>
 
       <!-- Stories -->
-      <section class="card card_size_xs card_padding_md">
+      <section class="section-stories card card_size_xs card_padding_md">
         <div class="card__header">
           <h3 class="card__title">Stories</h3>
         </div>
@@ -189,8 +192,8 @@
         </div>
       </section>
 
-      <!-- Menu -->
-      <section class="card card_size_xs card_padding_lg">
+      <!-- Nav -->
+      <section class="section-nav card card_size_xs card_padding_lg">
         <div class="card__header card__header_border_bottom">
           <a href="/">
             <img src="./images/icons/component.svg" alt="Logo" class="logo" />
@@ -217,7 +220,7 @@
       </section>
 
       <!-- Requests -->
-      <section class="card card_size_md card_padding_md">
+      <section class="section-requests card card_size_md card_padding_md">
         <div class="card__header">
           <h3 class="card__title">Requests</h3>
           <div class="badge badge_rounded card">6</div>
@@ -236,7 +239,7 @@
             type="button"
             class="button button_regular button_regular_sm requests__button"
           >
-            Cancle
+            Cancel
           </button>
           <button
             type="button"
@@ -250,8 +253,8 @@
         </div>
       </section>
 
-      <!-- Switch -->
-      <section class="card card_size_md card_padding_md">
+      <!-- Switch-mode -->
+      <section class="section-switch-mode card card_size_xs card_padding_md">
         <div class="card__header card__header_between">
           <h3 class="card__title">Switch Mode</h3>
 
@@ -266,7 +269,7 @@
       </section>
 
       <!-- Profile -->
-      <section class="card card_size_sm card_padding_sm">
+      <section class="section-profile card card_size_sm card_padding_sm">
         <div class="profile">
           <div class="profile__images">
             <img src="./images/nature1.png" alt="" class="profile__image" />

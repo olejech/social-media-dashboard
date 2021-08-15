@@ -1,5 +1,6 @@
 .nav {
   font-size: 16px;
+  grid-area: nav;
   line-height: 18px;
 
   &__list {

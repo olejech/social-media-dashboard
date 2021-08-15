@@ -1,6 +1,7 @@
 .requests {
   display: flex;
   align-items: center;
+  grid-area: requests;
 
   &__info {
     flex-grow: 1;

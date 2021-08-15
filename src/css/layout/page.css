@@ -1,0 +1,47 @@
+.page {
+  display: grid;
+  gap: 41px;
+  grid-template-areas:
+    'nav new-post new-post profile'
+    'contacts post post photos'
+    'switch-mode stories requests messages';
+}
+
+.section-messages {
+  grid-area: messages;
+}
+
+.section-photos {
+  align-self: center;
+  grid-area: photos;
+}
+
+.section-stories {
+  align-self: end;
+  grid-area: stories;
+}
+
+.section-contacts {
+  align-self: center;
+  grid-area: contacts;
+}
+
+.section-nav {
+  align-self: start;
+  grid-area: nav;
+}
+
+.section-requests {
+  align-self: end;
+  grid-area: requests;
+}
+
+.section-switch-mode {
+  align-self: end;
+  grid-area: switch-mode;
+}
+
+.section-profile {
+  align-self: start;
+  grid-area: profile;
+}

@@ -4,6 +4,9 @@
 @import './base/vars.css';
 @import './base/global.css';
 
+/* Layout */
+@import './layout/page.css';
+
 /* Components */
 @import './components/button.css';
 @import './components/card.css';

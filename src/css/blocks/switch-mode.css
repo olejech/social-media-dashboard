@@ -1,4 +1,5 @@
 .switch-mode {
   font-size: 14px;
+  grid-area: switch-mode;
   line-height: 21px;
 }
