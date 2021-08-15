@@ -10,12 +10,12 @@
 @import './components/badge.css';
 @import './components/avatar.css';
 @import './components/image.css';
+@import './components/nav.css';
 
 /* Blocks */
 @import './blocks/photos.css';
 @import './blocks/message.css';
 @import './blocks/contact.css';
 @import './blocks/stories.css';
-@import './blocks/menu.css';
 @import './blocks/logo.css';
-@import './blocks/nav.css';
+@import './blocks/requests.css';

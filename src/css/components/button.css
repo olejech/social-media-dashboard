@@ -3,4 +3,26 @@
   border: none;
   background: none;
   cursor: pointer;
+
+  &_regular {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 2px 8px 40px rgba(141, 142, 143, 0.3);
+    font-size: 12px;
+    line-height: 14px;
+    transition: box-shadow 0.3s;
+
+    &_accent {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    &_sm {
+      padding: 13px 20px;
+    }
+
+    &:hover {
+      box-shadow: 2px 8px 30px rgba(141, 142, 143, 0.4);
+    }
+  }
 }

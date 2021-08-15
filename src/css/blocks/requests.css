@@ -1,0 +1,28 @@
+.requests {
+  display: flex;
+  align-items: center;
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__category {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__avatar {
+    margin-right: 14px;
+  }
+
+  &__button + &__button {
+    margin-left: 12px;
+  }
+}
