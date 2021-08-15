@@ -1,0 +1,120 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__images {
+    display: flex;
+    width: 100%;
+    align-self: space-between;
+    justify-content: space-between;
+
+    &:nth-child(1) {
+      border-radius: 20px 10px 10px 10px;
+    }
+
+    &:nth-child(2) {
+      border-radius: 10px;
+    }
+
+    &:nth-child(3) {
+      border-radius: 10px 10px 20px 10px;
+    }
+  }
+
+  &__image {
+    width: 99px;
+    height: 102px;
+    object-fit: cover;
+  }
+
+  &__avatar {
+    position: relative;
+    top: -7px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 1);
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    color: var(--dark);
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__city {
+    margin-bottom: 31px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__friends {
+    margin-bottom: 13px;
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__stories {
+    --size: 28px;
+    --offset: 15px;
+
+    position: relative;
+    right: 40px;
+    display: flex;
+    height: 28px;
+  }
+
+  &__story {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    border: 2px solid var(--white);
+
+    &:nth-child(2) {
+      left: var(--offset);
+    }
+
+    &:nth-child(3) {
+      left: calc(var(--offset) * 2);
+    }
+
+    &:nth-child(4) {
+      left: calc(var(--offset) * 3);
+    }
+  }
+
+  &__new-friends {
+    position: relative;
+    left: calc(var(--offset) * 4 + 15px);
+    align-self: center;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  &__stats {
+    display: grid;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    gap: 5px 75px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  &__number {
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  &__text {
+    color: var(--dark);
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

@@ -15,6 +15,10 @@
     max-width: 290px;
   }
 
+  &_padding_sm {
+    padding: 11px;
+  }
+
   &_padding_md {
     padding: 26px 24px;
   }
