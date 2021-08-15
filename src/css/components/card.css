@@ -15,6 +15,10 @@
     padding: 26px 24px;
   }
 
+  &_padding_lg {
+    padding: 37px;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -22,6 +26,11 @@
 
     &_between {
       justify-content: space-between;
+    }
+
+    &_border_bottom {
+      padding-bottom: 37px;
+      border-bottom: 1px solid var(--blue-100);
     }
   }
 
