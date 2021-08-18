@@ -3,6 +3,10 @@
   border-radius: 30px;
   box-shadow: 0 20px 90px rgba(205, 217, 224, 0.5);
 
+  &_size_lg {
+    max-width: 760px;
+  }
+
   &_size_md {
     max-width: 438px;
   }

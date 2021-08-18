@@ -1,5 +1,6 @@
 .page {
   display: grid;
+  background: var(--blue-200);
   gap: 41px;
   grid-template-areas:
     'nav new-post new-post profile'
@@ -44,4 +45,9 @@
 .section-profile {
   align-self: start;
   grid-area: profile;
+}
+
+.section-new-post {
+  align-self: start;
+  grid-area: new-post;
 }

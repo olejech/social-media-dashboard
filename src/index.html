@@ -317,6 +317,65 @@
           </div>
         </div>
       </section>
+
+      <!-- Post -->
+      <section class="section-new-post card card_size_lg card_padding_md">
+        <div class="card__header">
+          <h3 class="card__title">New post</h3>
+        </div>
+        <div class="new-post">
+          <div class="new-post__info">
+            <img
+              src="./images/photo14.png"
+              alt=""
+              class="avatar avatar_rounded new-post__avatar"
+            />
+
+            <textarea
+              class="new-post__textarea"
+              placeholder="Write a something...."
+            ></textarea>
+          </div>
+          <div class="new-post__controls">
+            <span class="new-post__select-name"> Visible For </span>
+            <div class="new-post__select-wrap">
+              <select class="new-post__select">
+                <option value="friends" selected>Friends</option>
+                <option value="parents">Parents</option>
+                <option value="all">All</option>
+              </select>
+            </div>
+            <button
+              type="button"
+              aria-label="Upload image"
+              class="button new-post__button new-post__upload-image"
+            ></button>
+            <button
+              type="button"
+              aria-label="Open smiles"
+              class="button new-post__button new-post__smiles"
+            ></button>
+            <button
+              type="button"
+              aria-label="Tap like"
+              class="button new-post__button new-post__like"
+            ></button>
+            <button
+              type="button"
+              aria-label="Upload file"
+              class="button new-post__button new-post__upload-file"
+            ></button>
+            <button
+              class="
+                button button_regular button_regular_accent button_regular_sm
+                new-post__button-share
+              "
+            >
+              Share
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./js/bundle.js"></script>
   </body>
