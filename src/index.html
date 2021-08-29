@@ -7,9 +7,408 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="container page">
+    <div class="container page grid">
+      <!-- Nav -->
+      <section class="grid__item card card_size_xs card_padding_lg">
+        <div class="card__header card__header_border_bottom">
+          <a href="/">
+            <img src="./images/icons/component.svg" alt="Logo" class="logo" />
+          </a>
+          <h3 class="card__title">Menu</h3>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <a href="#" class="nav__link"><li class="nav__item">Chat</li></a>
+            <a href="#" class="nav__link"><li class="nav__item">Event</li></a>
+            <a href="#" class="nav__link"
+              ><li class="nav__item">Bookmark</li></a
+            >
+            <a href="#" class="nav__link"><li class="nav__item">Friends</li></a>
+            <a href="#" class="nav__link">
+              <li class="nav__item">Posts</li>
+              <div class="badge badge_button">23</div>
+            </a>
+            <a href="#" class="nav__link"
+              ><li class="nav__item">Settings</li></a
+            >
+          </ul>
+        </nav>
+      </section>
+
+      <!-- New Post -->
+      <section class="grid__item card card_size_lg card_padding_md">
+        <div class="card__header card__header_between">
+          <h3 class="card__title">New post</h3>
+          <button
+            type="button"
+            class="button button card__options"
+            aria-label="Open options"
+          >
+            <div class="card__dot"></div>
+          </button>
+        </div>
+        <div class="new-post">
+          <div class="new-post__info">
+            <img
+              src="./images/photo14.png"
+              alt=""
+              class="avatar avatar_rounded new-post__avatar"
+            />
+
+            <textarea
+              class="new-post__textarea"
+              placeholder="Write a something...."
+            ></textarea>
+          </div>
+          <div class="new-post__controls">
+            <span class="new-post__select-name"> Visible For </span>
+            <div class="new-post__select-wrap">
+              <select class="new-post__select">
+                <option value="friends" selected>Friends</option>
+                <option value="parents">Parents</option>
+                <option value="all">All</option>
+              </select>
+            </div>
+            <button
+              type="button"
+              aria-label="Upload image"
+              class="button new-post__button new-post__upload-image"
+            ></button>
+            <button
+              type="button"
+              aria-label="Open smiles"
+              class="button new-post__button new-post__smiles"
+            ></button>
+            <button
+              type="button"
+              aria-label="Tap like"
+              class="button new-post__button new-post__like"
+            ></button>
+            <button
+              type="button"
+              aria-label="Upload file"
+              class="button new-post__button new-post__upload-file"
+            ></button>
+            <button
+              class="
+                button button_regular button_regular_accent button_regular_sm
+                new-post__button-share
+              "
+            >
+              Share
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile -->
+      <section class="grid__item card card_size_sm card_padding_sm">
+        <div class="profile">
+          <div class="profile__images">
+            <img src="./images/nature1.png" alt="" class="profile__image" />
+            <img src="./images/nature3.png" alt="" class="profile__image" />
+            <img src="./images/nature2.png" alt="" class="profile__image" />
+          </div>
+          <img
+            src="./images/avatar4.png"
+            alt=""
+            class="avatar avatar_circle profile__avatar"
+          />
+          <div class="profile__name">Ginny Churchills</div>
+          <div class="profile__city">Las Vegas, US</div>
+          <div class="profile__friends">10 new friends</div>
+          <div class="profile__stories">
+            <img
+              src="./images/avatar1.png"
+              alt=""
+              class="avatar avatar_circle profile__story"
+            />
+            <img
+              src="./images/avatar2.png"
+              alt=""
+              class="avatar avatar_circle profile__story"
+            />
+            <img
+              src="./images/avatar3.png"
+              alt=""
+              class="avatar avatar_circle profile__story"
+            />
+            <img
+              src="./images/photo6.png"
+              alt=""
+              class="avatar avatar_circle profile__story"
+            />
+            <div class="profile__new-friends">+6</div>
+          </div>
+          <div class="profile__stats">
+            <div class="profile__number">980</div>
+            <div class="profile__number">50</div>
+            <div class="profile__number">20</div>
+            <div class="profile__text">Friends</div>
+            <div class="profile__text">Post</div>
+            <div class="profile__text">Tags</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section
+        class="grid__item section-contacts card card_size_xs card_padding_md"
+      >
+        <div class="card__header">
+          <h3 class="card__title">Contacts</h3>
+          <div class="badge badge_button card__badge">24</div>
+        </div>
+        <div class="contact">
+          <img
+            class="contact__avatar avatar avatar_circle"
+            src="./images/photo6.png"
+            alt=""
+          />
+          <div class="contact__info">
+            <div class="contact__name">Noora Hayes</div>
+            <div class="contact__city">New york</div>
+          </div>
+        </div>
+        <div class="contact">
+          <img
+            class="contact__avatar avatar avatar_circle"
+            src="./images/photo7.png"
+            alt=""
+          />
+          <div class="contact__info">
+            <div class="contact__name">Edward sarte</div>
+            <div class="contact__city">California</div>
+          </div>
+        </div>
+        <div class="contact">
+          <img
+            class="contact__avatar avatar avatar_circle"
+            src="./images/photo8.png"
+            alt=""
+          />
+          <div class="contact__info">
+            <div class="contact__name">Emily Endresen</div>
+            <div class="contact__city">Los Angelas</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post -->
+      <section
+        class="grid__item section-post post card card_size_lg card_padding_md"
+      >
+        <div class="card__header card__header_between">
+          <div class="post__header">
+            <img
+              src="./images/photo14.png"
+              alt=""
+              class="post__avatar avatar avatar__rounded"
+            />
+            <div class="post__info">
+              <div class="post__author">Ginny Churchills</div>
+              <div class="post__date">September 20, 2020</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="button button card__options"
+            aria-label="Open options"
+          >
+            <div class="card__dot"></div>
+          </button>
+        </div>
+        <p class="post__content">I love my new Collections</p>
+        <div class="post__hashtags">#photos #wallpaper #new #models</div>
+        <div class="post__gallery">
+          <img src="./images/photo15.png" alt="" />
+          <img src="./images/photo16.png" alt="" />
+          <img src="./images/photo17.png" alt="" />
+        </div>
+        <div class="post__controls">
+          <div class="post__button-wrap">
+            <button
+              type="button"
+              aria-label="Tap like"
+              class="button post__button post__like"
+            ></button>
+            <div class="post__value">3.5k</div>
+          </div>
+          <button
+            type="button"
+            aria-label="Open new messages"
+            class="button post__button post__message"
+          >
+            <div class="badge badge_rounded post__badge">3</div>
+          </button>
+          <input
+            type="text"
+            class="post__input"
+            placeholder="Write a comment"
+          />
+          <button
+            type="button"
+            aria-label="Upload photo"
+            class="button post__button post__upload-image"
+          ></button>
+          <button
+            type="button"
+            aria-label="Open smiles"
+            class="button post__button post__smiles"
+          ></button>
+          <button
+            type="button"
+            aria-label="Upload file"
+            class="button post__button post__upload-file"
+          ></button>
+          <button
+            type="button"
+            aria-label="Send message"
+            class="
+              button button_regular button_regular_accent
+              post__button post__button-send
+            "
+          ></button>
+        </div>
+      </section>
+
+      <!-- Photos -->
+      <section
+        class="grid__item section-photos card card_size_sm card_padding_md"
+      >
+        <div class="card__header card__header_between">
+          <h3 class="card__title">Photos</h3>
+          <button
+            type="button"
+            class="button button card__options"
+            aria-label="Open options"
+          >
+            <div class="card__dot"></div>
+          </button>
+        </div>
+        <div class="photos">
+          <div class="photos__text">5 Pictures upladed</div>
+          <div class="photos__grid">
+            <img
+              src="./images/photo1.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo2.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo3.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo4.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+            <img
+              src="./images/photo5.png"
+              alt=""
+              class="image image_rounded image_size_sm"
+            />
+
+            <button
+              type="button"
+              class="button photos__button"
+              aria-label="Add photo"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Switch-mode -->
+      <section class="grid__item card card_size_xs card_padding_md">
+        <div class="card__header card__header_between">
+          <h3 class="card__title">Switch Mode</h3>
+
+          <label class="switch">
+            <input type="checkbox" class="switch__input" />
+            <span class="switch__round"></span>
+          </label>
+        </div>
+        <div class="switch-mode">
+          Switch your mode to get dark theme of your dashboard
+        </div>
+      </section>
+
+      <!-- Stories -->
+      <section class="grid__item card card_size_xs card_padding_md">
+        <div class="card__header">
+          <h3 class="card__title">Stories</h3>
+        </div>
+        <div class="stories">
+          <img
+            src="./images/photo9.png"
+            alt=""
+            class="stories__story avatar avatar_circle"
+          />
+          <img
+            src="./images/photo10.png"
+            alt=""
+            class="stories__story avatar avatar_circle"
+          />
+          <img
+            src="./images/photo11.png"
+            alt=""
+            class="stories__story avatar avatar_circle"
+          />
+          <img
+            src="./images/photo12.png"
+            alt=""
+            class="stories__story avatar avatar_circle"
+          />
+          <button
+            class="button stories__button"
+            type="button"
+            aria-label="Add story"
+          ></button>
+        </div>
+      </section>
+
+      <!-- Requests -->
+      <section class="grid__item card card_size_md card_padding_md">
+        <div class="card__header">
+          <h3 class="card__title">Requests</h3>
+          <div class="badge badge_rounded">6</div>
+        </div>
+        <div class="requests">
+          <img
+            src="./images/photo13.png"
+            alt=""
+            class="avatar avatar_circle requests__avatar"
+          />
+          <div class="requests__info">
+            <div class="requests__name">Anna julia</div>
+            <div class="requests__category">web designer</div>
+          </div>
+          <button
+            type="button"
+            class="button button_regular button_regular_sm requests__button"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            class="
+              button button_regular button_regular_accent button_regular_sm
+              requests__button
+            "
+          >
+            Accept
+          </button>
+        </div>
+      </section>
+
       <!-- Messages -->
-      <section class="section-messages card card_size_sm card_padding_md">
+      <section class="grid__item card card_size_sm card_padding_md">
         <div class="card__header card__header_between">
           <h3 class="card__title">Messages</h3>
           <button
@@ -66,317 +465,8 @@
           </div>
         </div>
       </section>
-
-      <!-- Photos -->
-      <section class="section-photos card card_size_sm card_padding_md">
-        <div class="card__header card__header_between">
-          <h3 class="card__title">Photos</h3>
-          <button
-            type="button"
-            class="button button card__options"
-            aria-label="Open options"
-          >
-            <div class="card__dot"></div>
-          </button>
-        </div>
-        <div class="photos">
-          <div class="photos__text">5 Pictures upladed</div>
-          <div class="photos__grid">
-            <img
-              src="./images/photo1.png"
-              alt=""
-              class="image image_rounded image_size_sm"
-            />
-            <img
-              src="./images/photo2.png"
-              alt=""
-              class="image image_rounded image_size_sm"
-            />
-            <img
-              src="./images/photo3.png"
-              alt=""
-              class="image image_rounded image_size_sm"
-            />
-            <img
-              src="./images/photo4.png"
-              alt=""
-              class="image image_rounded image_size_sm"
-            />
-            <img
-              src="./images/photo5.png"
-              alt=""
-              class="image image_rounded image_size_sm"
-            />
-
-            <button
-              type="button"
-              class="button photos__button"
-              aria-label="Add photo"
-            ></button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contacts -->
-      <section class="section-contacts card card_size_xs card_padding_md">
-        <div class="card__header">
-          <h3 class="card__title">Contacts</h3>
-          <div class="badge badge_button card__badge">24</div>
-        </div>
-        <div class="contact">
-          <img
-            class="contact__avatar avatar avatar_circle"
-            src="./images/photo6.png"
-            alt=""
-          />
-          <div class="contact__info">
-            <div class="contact__name">Noora Hayes</div>
-            <div class="contact__city">New york</div>
-          </div>
-        </div>
-        <div class="contact">
-          <img
-            class="contact__avatar avatar avatar_circle"
-            src="./images/photo7.png"
-            alt=""
-          />
-          <div class="contact__info">
-            <div class="contact__name">Edward sarte</div>
-            <div class="contact__city">California</div>
-          </div>
-        </div>
-        <div class="contact">
-          <img
-            class="contact__avatar avatar avatar_circle"
-            src="./images/photo8.png"
-            alt=""
-          />
-          <div class="contact__info">
-            <div class="contact__name">Emily Endresen</div>
-            <div class="contact__city">Los Angelas</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stories -->
-      <section class="section-stories card card_size_xs card_padding_md">
-        <div class="card__header">
-          <h3 class="card__title">Stories</h3>
-        </div>
-        <div class="stories">
-          <img
-            src="./images/photo9.png"
-            alt=""
-            class="stories__story avatar avatar_circle"
-          />
-          <img
-            src="./images/photo10.png"
-            alt=""
-            class="stories__story avatar avatar_circle"
-          />
-          <img
-            src="./images/photo11.png"
-            alt=""
-            class="stories__story avatar avatar_circle"
-          />
-          <img
-            src="./images/photo12.png"
-            alt=""
-            class="stories__story avatar avatar_circle"
-          />
-          <button
-            class="button stories__button"
-            type="button"
-            aria-label="Add story"
-          ></button>
-        </div>
-      </section>
-
-      <!-- Nav -->
-      <section class="section-nav card card_size_xs card_padding_lg">
-        <div class="card__header card__header_border_bottom">
-          <a href="/">
-            <img src="./images/icons/component.svg" alt="Logo" class="logo" />
-          </a>
-          <h3 class="card__title">Menu</h3>
-        </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <a href="#" class="nav__link"><li class="nav__item">Chat</li></a>
-            <a href="#" class="nav__link"><li class="nav__item">Event</li></a>
-            <a href="#" class="nav__link"
-              ><li class="nav__item">Bookmark</li></a
-            >
-            <a href="#" class="nav__link"><li class="nav__item">Friends</li></a>
-            <a href="#" class="nav__link">
-              <li class="nav__item">Posts</li>
-              <div class="badge badge_button">23</div>
-            </a>
-            <a href="#" class="nav__link"
-              ><li class="nav__item">Settings</li></a
-            >
-          </ul>
-        </nav>
-      </section>
-
-      <!-- Requests -->
-      <section class="section-requests card card_size_md card_padding_md">
-        <div class="card__header">
-          <h3 class="card__title">Requests</h3>
-          <div class="badge badge_rounded card">6</div>
-        </div>
-        <div class="requests">
-          <img
-            src="./images/photo13.png"
-            alt=""
-            class="avatar avatar_circle requests__avatar"
-          />
-          <div class="requests__info">
-            <div class="requests__name">Anna julia</div>
-            <div class="requests__category">web designer</div>
-          </div>
-          <button
-            type="button"
-            class="button button_regular button_regular_sm requests__button"
-          >
-            Cancel
-          </button>
-          <button
-            type="button"
-            class="
-              button button_regular button_regular_accent button_regular_sm
-              requests__button
-            "
-          >
-            Accept
-          </button>
-        </div>
-      </section>
-
-      <!-- Switch-mode -->
-      <section class="section-switch-mode card card_size_xs card_padding_md">
-        <div class="card__header card__header_between">
-          <h3 class="card__title">Switch Mode</h3>
-
-          <label class="switch">
-            <input type="checkbox" class="switch__input" />
-            <span class="switch__round"></span>
-          </label>
-        </div>
-        <div class="switch-mode">
-          Switch your mode to get dark theme of your dashboard
-        </div>
-      </section>
-
-      <!-- Profile -->
-      <section class="section-profile card card_size_sm card_padding_sm">
-        <div class="profile">
-          <div class="profile__images">
-            <img src="./images/nature1.png" alt="" class="profile__image" />
-            <img src="./images/nature3.png" alt="" class="profile__image" />
-            <img src="./images/nature2.png" alt="" class="profile__image" />
-          </div>
-          <img
-            src="./images/avatar4.png"
-            alt=""
-            class="avatar avatar_circle profile__avatar"
-          />
-          <div class="profile__name">Ginny Churchills</div>
-          <div class="profile__city">Las Vegas, US</div>
-          <div class="profile__friends">10 new friends</div>
-          <div class="profile__stories">
-            <img
-              src="./images/avatar1.png"
-              alt=""
-              class="avatar avatar_circle profile__story"
-            />
-            <img
-              src="./images/avatar2.png"
-              alt=""
-              class="avatar avatar_circle profile__story"
-            />
-            <img
-              src="./images/avatar3.png"
-              alt=""
-              class="avatar avatar_circle profile__story"
-            />
-            <img
-              src="./images/photo6.png"
-              alt=""
-              class="avatar avatar_circle profile__story"
-            />
-            <div class="profile__new-friends">+6</div>
-          </div>
-          <div class="profile__stats">
-            <div class="profile__number">980</div>
-            <div class="profile__number">50</div>
-            <div class="profile__number">20</div>
-            <div class="profile__text">Friends</div>
-            <div class="profile__text">Post</div>
-            <div class="profile__text">Tags</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Post -->
-      <section class="section-new-post card card_size_lg card_padding_md">
-        <div class="card__header">
-          <h3 class="card__title">New post</h3>
-        </div>
-        <div class="new-post">
-          <div class="new-post__info">
-            <img
-              src="./images/photo14.png"
-              alt=""
-              class="avatar avatar_rounded new-post__avatar"
-            />
-
-            <textarea
-              class="new-post__textarea"
-              placeholder="Write a something...."
-            ></textarea>
-          </div>
-          <div class="new-post__controls">
-            <span class="new-post__select-name"> Visible For </span>
-            <div class="new-post__select-wrap">
-              <select class="new-post__select">
-                <option value="friends" selected>Friends</option>
-                <option value="parents">Parents</option>
-                <option value="all">All</option>
-              </select>
-            </div>
-            <button
-              type="button"
-              aria-label="Upload image"
-              class="button new-post__button new-post__upload-image"
-            ></button>
-            <button
-              type="button"
-              aria-label="Open smiles"
-              class="button new-post__button new-post__smiles"
-            ></button>
-            <button
-              type="button"
-              aria-label="Tap like"
-              class="button new-post__button new-post__like"
-            ></button>
-            <button
-              type="button"
-              aria-label="Upload file"
-              class="button new-post__button new-post__upload-file"
-            ></button>
-            <button
-              class="
-                button button_regular button_regular_accent button_regular_sm
-                new-post__button-share
-              "
-            >
-              Share
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="./js/bundle.js"></script>
   </body>
 </html>
